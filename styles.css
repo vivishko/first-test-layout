@@ -1,0 +1,129 @@
+body {
+    font-family: arial;
+	font-size: 0.7em;
+	/* Размер шрифта лучше всего задавать в em — относительной единице измерения. Пиксели и пункты — это абсолютные единицы измерения, а проценты — относительные. Также размер шрифта можно задавать с помощью ключевых слов: small, large и т. д. Но их обычно не используют. */
+    color: black;
+    background-color: #fff;
+    margin: 0px;
+	/* внешние отступы элемента — отступы от внешней границы элемента до границ родительского элемента или до соседних элементов. Можно задавать отступы для разных сторон с помощью свойств margin-left, margin-right,  margin-top, margin-bottom. */
+    padding: 0px;
+	/* Устанавливает значение полей вокруг содержимого элемента. Полем называется расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое  */
+}
+
+.main{
+	background-color: rgb(22,0,67); /*#160043;*/ /*#27046d;*/
+	background-blend-mode: luminosity;
+	opacity: .9;
+	background-image: url(assets/icons/1background.jpg);
+	background-size: cover;
+}
+.main_first_text{
+	/*margin:20px;*/
+	padding: 80px;
+	padding-bottom: 20px;
+}
+.main_text{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.center{
+	text-align: center;
+}
+.White-Block{
+	color: white;
+}
+.zagolovok{
+	font-family: Times New Roman;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	
+}
+
+
+.about_left{
+	margin: 40px;
+}
+.about_right{
+	/*left: 45%;*/
+	
+}
+.about_video{
+	background-color: rgb(22,0,67); /*#160043;*/ /*#27046d;*/
+	background-blend-mode: luminosity;
+	opacity: .9;
+	background-image: url(assets/icons/2background.jpg);
+	background-size: cover;
+}
+.team{
+	background-color: rgb(22,0,67); /*#160043;*/ /*#27046d;*/
+	background-blend-mode: luminosity;
+	opacity: .9;
+	background-image: url(assets/icons/3background.jpg);
+	background-size: cover;
+}
+.testimonials{
+	background-color: rgb(22,0,67); /*#160043;*/ /*#27046d;*/
+	background-blend-mode: luminosity;
+	opacity: .9;
+	background-image: url(assets/icons/4background.jpg);
+	background-size: cover;
+}
+.footer{
+	background-color: rgb(22,0,67); /*#160043;*/ /*#27046d;*/
+	background-blend-mode: luminosity;
+	opacity: .9;
+	background-image: url(assets/icons/5background.jpg);
+	background-size: cover;
+}
+
+
+
+h1 {
+    color: black;
+	font-family: arial;
+    background-color: #900;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 4px;
+    /*font-style: italic;*/
+    text-align: center;
+    /* letter-spacing: 0.5em; 
+    border-bottom-style: solid;
+	Устанавливает стиль границы внизу элемента. */
+    border-bottom-width: 0.5em;
+    border-bottom-color: #c00;
+}
+
+h2 {
+    color: black;
+    background-color: #d00;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+}
+
+img {
+    fill: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+li {
+    color: #900;
+    font-style: italic;
+}
+
+table {
+    background-color: #ccc;
+}
+
