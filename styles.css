@@ -1,18 +1,21 @@
 body {
     font-family: arial;
 	font-size: 0.7em;
-	/* Размер шрифта лучше всего задавать в em — относительной единице измерения. Пиксели и пункты — это абсолютные единицы измерения, а проценты — относительные. Также размер шрифта можно задавать с помощью ключевых слов: small, large и т. д. Но их обычно не используют. */
+	/* Размер шрифта лучше всего задавать в em — относительной единице измерения. Пиксели и пункты — это абсолютные единицы измерения, 
+	а проценты — относительные. Также размер шрифта можно задавать с помощью ключевых слов: small, large и т. д. Но их обычно не используют. */
     color: black;
     background-color: #fff;
     margin: 0px;
-	/* внешние отступы элемента — отступы от внешней границы элемента до границ родительского элемента или до соседних элементов. Можно задавать отступы для разных сторон с помощью свойств margin-left, margin-right,  margin-top, margin-bottom. */
+	/* внешние отступы элемента — отступы от внешней границы элемента до границ родительского элемента или до соседних элементов. 
+	Можно задавать отступы для разных сторон с помощью свойств margin-left, margin-right,  margin-top, margin-bottom. */
     padding: 0px;
-	/* Устанавливает значение полей вокруг содержимого элемента. Полем называется расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое  */
+	/* Устанавливает значение полей вокруг содержимого элемента. Полем называется расстояние от внутреннего края 
+	рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое  */
 }
 
 .ramky{
-	margin-left: 22%;
-	margin-right: 22%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 .center{
 	text-align: center;
@@ -22,7 +25,8 @@ body {
 }
 .zagolovok{
 	font-family: Times New Roman;
-	font-size: 20px;
+	font-weight: bold;
+	font-size: 17px;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
@@ -47,9 +51,19 @@ body {
 }
 .navigation_left{
 	float: left;
-	margin-left: 10%;
+	margin-left: 20%;
 	/*margin-right: 70%;*/
 	padding-top: 15px;
+}
+.ltajam{
+	/*position: absolute;
+ 	top: 50%;
+	margin: 50% 0 0 0;*/
+	/*vertical-align: middle;*/
+	margin: 10.5px;
+	/*position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);*/
 }
 .navigation_right{
 	/*box-sizing: border-box;*/
@@ -72,22 +86,26 @@ body {
 	color: #fff;
 	font-size: 1em;
 	text-align: center;
+	outline: none;
 	/*text-decoration: none;*/
 	/*letter-spacing: 1px;*/
 	/*transition: all 0.3s ease-out;*/	
 }
 .navi_buttons:hover{
-	border: 0px solid ##1ae3d5;
+	border: 0px solid #1ae3d5;
 	color: #1ae3d5;
 }
 .main_first_text{
 	/*margin:20px;*/
-	padding: 80px;
+	padding-top: 80px;
 	padding-bottom: 10px;
 }
 .main_text{
 	margin-top: 20px;
 	margin-bottom: 40px;
+}
+.main_phrase{
+	font-size: 22px;
 }
 .logoclass{
 	width: 150px;
@@ -108,6 +126,8 @@ body {
 	border-radius: 4px;
 	color: #1ae3d5;
 	text-align: center;
+	font-weight: bold;
+	outline: none;
 	/*text-decoration: none;*/
 	/*letter-spacing: 1px;*/
 	/*transition: all 0.3s ease-out;*/
@@ -120,6 +140,9 @@ body {
 	background: rgba(255, 255, 255, 0.3);
 	border: 1px solid #fff;
 	color: #fff;
+}
+.main_dotnav{
+	padding-bottom: 20px;
 }
 .dots{
 	/*display: block;*/
@@ -136,6 +159,7 @@ body {
 	border-radius: 5px;
 	color: #1ae3d5;
 	text-align: center;
+	outline: none;
 	/*text-decoration: none;*/
 	/*letter-spacing: 1px;*/
 	/*transition: all 0.3s ease-out;*/
@@ -170,10 +194,15 @@ body {
 	padding-top: 60px;
 	padding-bottom: 25px;
 }
+/*
+.about_phrase{
+	font-size: 17px;
+}
+*/
 .about_textes{
-	padding-top:5px;
-	padding-bottom:5px;
-	padding-right: 80px;
+	padding-top:10px;
+	padding-bottom:10px;
+	/*padding-right: 80px;*/
 }
 .about_learn_button{
 	margin-left: 45%;
@@ -195,7 +224,8 @@ body {
 	border-radius: 4px;
 	color: #1ae3d5;
 	text-align: center;
-	
+	font-weight: bold;
+	outline: none;
 }
 .ab_learn_button:hover{
 	border: 1px solid #160043;
@@ -313,7 +343,6 @@ h1 {
     border-bottom-width: 0.5em;
     border-bottom-color: #c00;
 }
-
 h2 {
     color: black;
     background-color: #d00;
@@ -322,25 +351,20 @@ h2 {
     padding: 2px;
     padding-left: 14px;
 }
-
 img {
     fill: black;
 }
-
 a {
     text-decoration: none;
 }
-
 strong {
     font-style: italic;
     text-transform: uppercase;
 }
-
 li {
     color: #900;
     font-style: italic;
 }
-
 table {
     background-color: #ccc;
 }
