@@ -1,5 +1,5 @@
 body {
-    font-family: arial;
+    font-family: Roboto, sans-serif;
 	font-size: 0.7em;
 	/* Размер шрифта лучше всего задавать в em — относительной единице измерения. Пиксели и пункты — это абсолютные единицы измерения, 
 	а проценты — относительные. Также размер шрифта можно задавать с помощью ключевых слов: small, large и т. д. Но их обычно не используют. */
@@ -185,18 +185,46 @@ body {
 /* ************************************************************************* */
 /* about us block */
 
+
 .about{
-	margin: 0 auto;
+	/*margin: 0 auto;*/
+	
+}
+.text_part2{
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 20px;
+	padding-bottom: 35px;
+	/*margin-bottom: 30px;*/
+	
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .about_left{
-	float: left;
-	margin-left: 22%;
-	padding-top: 7em;
+	/*float: left;
+	margin-left: 22%;*/
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 .about_right{
-	margin-left: 45%;
-	padding-top: 60px;
-	padding-bottom: 25px;
+	/*margin-left: 45%;*/
+	/*padding-top: 60px;
+	padding-bottom: 25px;*/
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 5em;
+	/*padding-right: 4em;*/
+	width: 400px;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: column;
+	flex-wrap: nowrap;
+	/*justify-content: center;*/
 }
 /*
 .about_phrase{
@@ -209,9 +237,9 @@ body {
 	/*padding-right: 80px;*/
 }
 .about_learn_button{
-	margin-left: 45%;
+	/*margin-left: 45%;*/
 	padding-top: 10px;
-	padding-bottom: 60px;
+	padding-bottom: 10px;
 }
 .ab_learn_button{
 	display: block;
@@ -219,7 +247,7 @@ body {
 	/*margin: 0 auto;*/
 	padding: 8px;
 	padding-top: 10px;
-	width: 20%;
+	width: 30%;
 	max-width: 150px;
 	max-height: 50px;
 	background: #fff;
@@ -315,14 +343,26 @@ body {
 	padding: 40px;
 }
 .expertise_items_block {
-	padding-left: 25%;
-	padding-right: 25%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 35px;
 	margin-bottom: 30px;
+	
 	/*генерирует flex-контейнер уровня блока*/
 	display: -webkit-flex; 
 	display: flex; 
 	flex-direction: row;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.expert_item{
+	width: 185px;
+	/*height: 261px;*/
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: column;
+	flex-wrap: nowrap;
 }
 .expertise_icons{
 	height: 4em; /*3?*/
@@ -356,8 +396,8 @@ body {
 	padding-top: 20px;
 }
 .team_items{
-	/*padding-left: 25%;
-	padding-right: 25%;*/
+	padding-left: 15%;
+	padding-right: 15%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	/*генерирует flex-контейнер уровня блока*/
@@ -365,10 +405,20 @@ body {
 	display: flex; 
 	flex-direction: row;
 	justify-content: center;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
 }
 .team_item{
 	margin: 10px;
+	/*width: 185px;*/
+	/*height: 261px;*/
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.team_items_textpart{
+	border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .team_icons{
 	width: 12em;
@@ -439,6 +489,27 @@ body {
 	width: 1em;
 	height: 1em;
 }
+.works_text_button{
+	display: block;
+	box-sizing: border-box;
+	/*margin: 0 auto;*/
+	padding: 10px;
+	width: 20%;
+	/*max-width: 150px;
+	max-height: 50px;*/
+	min-width: 60px;
+	background: #000;
+	background: rgba(0, 0, 0, 0);
+	border: 0px solid #1ae3d5;
+	border-radius: 4px;
+	color: #000;
+	text-align: center;
+	/*font-weight: bold;*/
+	outline: none;
+}
+.works_text_button:hover{
+	background: rgba(0, 0, 0, 0.1);
+}
 .works_text_box{
 	/*генерирует flex-контейнер уровня блока*/
 	display: -webkit-flex; 
@@ -447,6 +518,34 @@ body {
 	/*flex-wrap: wrap;*/
 	justify-content: flex-end;
 	align-items: center;
+}
+.works_icons{
+	max-width: 180px;
+	height: 140px;
+}
+.works_items_top{
+	/*margin: 20px;*/
+	height: 140px;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+.works_items_bottom{
+	/*padding: 20px;*/
+	height: 140px;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 .a_works_button{
@@ -485,16 +584,172 @@ body {
 
 .testimonials{
 	background-image: url(assets/images/4b.jpg);
-	min-height: 250px;
+	/*min-height: 250px;*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.testimonials_icons{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	height: 20px;
+	width: 25px;
+}
+.testomonials_phrase{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.testimonials_author{
+	padding-top: 20px;
+	padding-bottom: 2px;
+}
+.testimonials_author_position{
+	padding-top: 2px;
+	padding-bottom: 20px;
+}
+.testimonials_author_position{
+	opacity: 0.6;
+}
+.testimonials_images{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*height: 140px;*/
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
+	/*align-content: stretch;*/
+}
+.test_back_button{
+	display: block;
+	box-sizing: border-box;
+	/*margin: 0 auto;*/
+	padding: 10px;
+	/*width: 20%;*/
+	max-width: 150px;
+	max-height: 50px;
+	background: #fff;
+	background: rgba(255, 255, 255, 0);
+	border: 0px solid #1ae3d5;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	/*font-weight: bold;*/
+	outline: none;
+}
+.test_back_button:hover{
+	background: rgba(255, 255, 255, 0.1);
+}
+.test_button{
+	display: block;
+	box-sizing: border-box;
+	/*margin: 0 auto;*/
+	padding: 10px;
+	/*width: 20%;*/
+	max-width: 150px;
+	/*max-height: 50px;*/
+	background: #fff;
+	background: rgba(255, 255, 255, 0);
+	border: 0px solid #1ae3d5;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	/*font-weight: bold;*/
+	outline: none;
+}
+.test_button:hover{
+	background: rgba(255, 255, 255, 0.1);
+}
+.test_forward_button{
+	display: block;
+	box-sizing: border-box;
+	/*margin: 0 auto;*/
+	padding: 10px;
+	/*width: 20%;*/
+	max-width: 150px;
+	max-height: 50px;
+	background: #fff;
+	background: rgba(255, 255, 255, 0);
+	border: 0px solid #1ae3d5;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	/*font-weight: bold;*/
+	outline: none;
+}
+.test_forward_button:hover{
+	background: rgba(255, 255, 255, 0.1);
 }
 
 /* ************************************************************************ */
 /* contact block */
 
-
+.contact{
+	padding: 20px;
+	/*height: 140px;*/
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
+	/*align-content: stretch;*/
+}
+.contact_form{
+	padding: 10px;
+	/*height: 140px;*/
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
+	/*align-content: stretch;*/
+}
+.contact_button{
+	display: block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 8px;
+	padding-top: 10px;
+	width: 20%;
+	max-width: 150px;
+	max-height: 50px;
+	background: #fff;
+	background: rgba(255, 255, 255, 0);
+	border: 1px solid #1ae3d5;
+	border-radius: 4px;
+	color: #1ae3d5;
+	text-align: center;
+	font-weight: bold;
+	outline: none;
+}
+.contact_button:hover{
+	border: 1px solid #160043;
+	color:#160043;
+}
+.contact_button:active{
+	background: rgba(22, 0, 67, 0.3);
+	border: 1px solid #160043;
+	color: #160043;
+}
+.contact_clients{
+	padding: 10px;
+	/*height: 140px;*/
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
+	/*align-content: stretch;*/
+}
 
 /* ************************************************************************ */
 /* footer block */
