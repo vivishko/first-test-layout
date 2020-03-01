@@ -3,6 +3,7 @@
 <head>
 	<title>my_first_and_worst_vyorstka</title>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="_all">
@@ -15,13 +16,13 @@
 						<!--<div></div>-->
 					</div>
 					<div class="navigation_right">
-						<button class="nav_home navi_buttons">HOME</button>
-						<button class="nav_about navi_buttons">ABOUT</button>
-						<button class="nav_expertise navi_buttons">EXPERTISE</button>
-						<button class="nav_teams navi_buttons">TEAMS</button>
-						<button class="nav_works navi_buttons">WORKS</button>
-						<button class="nav_peoplesay navi_buttons">PEOPLE SAY</button>
-						<button class="nav_contact navi_buttons">CONTACT</button>
+						<button class="nav_home navi_buttons zhirny">HOME</button>
+						<button class="nav_about navi_buttons zhirny">ABOUT</button>
+						<button class="nav_expertise navi_buttons zhirny">EXPERTISE</button>
+						<button class="nav_teams navi_buttons zhirny">TEAMS</button>
+						<button class="nav_works navi_buttons zhirny">WORKS</button>
+						<button class="nav_peoplesay navi_buttons zhirny">PEOPLE SAY</button>
+						<button class="nav_contact navi_buttons zhirny">CONTACT</button>
 					</div>
 				</div>
 				<div class="main">
@@ -277,13 +278,14 @@
 			</div>
 			<div class="contact">
 				<div class="contact_form">
-					<div class="contact_form_text zagolovok">GIVE US A GOOD NEWS</div>
+					<div class="contact_form_text zagolovok zhirny">GIVE US A GOOD NEWS</div>
 					<div class="contact_form_items">
 						<form >
-							<input type="text" placeholder="Name">
-							<input type="email" placeholder="Email">
-							<input type="text" placeholder="Subject">
-							<input type="text" placeholder="Your message">
+							<input type="text" class="form_name form_object" placeholder="Name">
+							<input type="email" class="form_mail form_object" placeholder="Email">
+							<input type="text" class="form_subject form_object" placeholder="Subject">
+							<!--<input type="text" class="form_message form_spec_object" placeholder="Your message">-->
+							<textarea type="text" name="comment" class="form_message form_spec_object" placeholder="Your message"></textarea>
 						</form>
 					</div>
 					<div class="contact_sendform_button">
@@ -291,31 +293,93 @@
 					</div>
 				</div>
 				<div class="contact_clients">
-					<div class="contact_clients_textv zagolovok">OUR HAPPY CLIENT</div>
+					<div class="contact_clients_textv zagolovok zhirny">OUR HAPPY CLIENT</div>
 					<div class="contact_clients_pics">
-						
+						<img src="assets/icons/Zara.svg" class="clients_logos" alt="1st">
+						<img src="assets/icons/Mango.svg" class="clients_logos" alt="2st">
+						<img src="assets/icons/Barneys_New_York.svg" class="clients_logos" alt="3d">
+						<img src="assets/icons/Gucci.svg" class="clients_logos" alt="4th">
+						<img src="assets/icons/Calvin_klein.svg" class="clients_logos" alt="5th">
+						<img src="assets/icons/NIKE.svg" class="clients_logos" alt="6st">
+						<img src="assets/icons/Converse.svg" class="clients_logos" alt="7st">
+						<img src="assets/icons/Puma_Logo.svg" class="clients_logos" alt="8st">
+						<img src="assets/icons/Levi's.svg" class="clients_logos" alt="9st">
+						<img src="assets/icons/Billabong.svg" class="clients_logos" alt="10st">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="footer">
+		<div class="footer White-Block">
 			<div class="footer_items">
-				<div class="footer_left_item">
-					
+				<div class="footer_left_item footer_item">
+					<div class="footer_left_logo f_main">
+						<img src="assets/images/log.png" class="f_log1" alt="m_logo">
+						<img src="assets/images/tajam.png" class="f_log2" alt="m_tajam">
+					</div>
+					<div class="footer_left_text poluproz">lorem quis bibendium auctor, nisi elit
+						consequat ipsum, nec sagittis sem nibh elit.
+						Duis sed odio sit amet auctror a omare odio
+						non mauris vitae erat in elit.
+					</div>
 				</div>
-				<div class="footer_center_item">
-					
+				<div class="footer_center_item footer_item">
+					<div class="footer_center_phrase zhirny f_main">OUR STUDIO</div>
+					<div class="footer_center_address poluproz footer_centertext">
+						<div class="footer_center_addicon">
+							<img src="assets/icons/mayachok.svg" class="f_cen_log1 f_c_log" alt="mayak">
+						</div>
+						<div class="footer_center_addtext f_ct">Ruko cucruk, JI. Radio luar dalem jos
+							Ni.12 - 13, Kalideres - Jakarta Barat 
+							11480 - Indonesia
+						</div>
+					</div>
+					<div class="footer_center_phone poluproz footer_centertext">
+						<div class="footer_center_phicon">
+							<img src="assets/icons/phone.svg" class="f_cen_log2 f_c_log" alt="phone">
+						</div>
+						<div class="footer_center_phtext f_ct">(+62) 21-2224 3333</div>
+					</div>
 				</div>
-				<div class="footer_right_item">
-					
+				<div class="footer_right_item footer_item">
+					<div class="footer_right_phrase zhirny f_main">STAY IN TOUCH</div>
+					<div class="footer_sendler">
+						<form>
+							<input type="email" class="footer_mail" placeholder="Subscribe our newsletter">
+						</form>
+						<button class="footer_newsbutton">
+							<img src="assets/icons/paper122.svg" class="footer_news_icons" alt="news">
+						</button>
+					</div>
+					<div class="footer_right_socials">
+						<button class="footer_facebook footer_right_buttons">
+							<img src="assets/icons/facebook.svg" class="footer_socials_icons" alt="socials">
+						</button>
+						<button class="footer_twitter footer_right_buttons">
+							<img src="assets/icons/twitter.svg" class="footer_socials_icons" alt="socials">
+						</button>
+						<button class="footer_dribbble footer_right_buttons">
+							<img src="assets/icons/dribbble.svg" class="footer_socials_icons" alt="socials">
+						</button>
+						<button class="footer_inst footer_right_buttons">
+							<img src="assets/icons/instagram.svg" class="footer_socials_icons" alt="socials">
+						</button>
+						<button class="footer_gplus footer_right_buttons">
+							<img src="assets/icons/gplus.svg" class="footer_socials_icons" alt="socials">
+						</button>
+						<button class="footer_youtube footer_right_buttons">
+							<img src="assets/icons/youtube.svg" class="footer_socials_icons" alt="socials">
+						</button>
+					</div>
 				</div>
 			</div>
 			<div class="footer_buttonandcopyright">
 				<div class="footer_left_buttons">
-					
+					<button class="footer_help footer_leftbuttons">HELP</button>
+					<button class="footer_terms footer_leftbuttons">TERMS&CONDITION</button>
+					<button class="footer_priv footer_leftbuttons">PRIVACY</button>
 				</div>
 				<div class="footer_right_copyright">
-					
+					Copyright c 2015 - Tajem Creative
 				</div>
 			</div>
 		</div>

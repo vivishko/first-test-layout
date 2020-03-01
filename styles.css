@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 	font-size: 0.7em;
 	/* Размер шрифта лучше всего задавать в em — относительной единице измерения. Пиксели и пункты — это абсолютные единицы измерения, 
 	а проценты — относительные. Также размер шрифта можно задавать с помощью ключевых слов: small, large и т. д. Но их обычно не используют. */
@@ -13,6 +13,9 @@ body {
 	рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое  */
 }
 
+.rob{
+	font-family: 'Roboto', ;
+}
 .ramky{
 	margin-left: 25%;
 	margin-right: 25%;
@@ -34,6 +37,10 @@ body {
 }
 .poluproz{
 	opacity: 0.8;
+}
+.str{
+	line-height: 15px;
+	/*letter-spacing: 0.01em;*/
 }
 
 
@@ -334,6 +341,7 @@ body {
 }
 .videotext{
 	padding: 2em;
+	letter-spacing: 0.1em;
 }
 
 /* ********************************************************************** */
@@ -689,35 +697,67 @@ body {
 
 .contact{
 	padding: 20px;
+	padding-left: 20%;
+	padding-right: 20%;
 	/*height: 140px;*/
 	/*генерирует flex-контейнер уровня блока*/
 	display: -webkit-flex; 
 	display: flex; 
 	flex-direction: row;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	/*align-items: stretch;*/
 	/*align-content: stretch;*/
 }
 .contact_form{
 	padding: 10px;
 	/*height: 140px;*/
+	width: 300px;
+	/*min-width: 280px;*/
+	/*max-width: 360px;*/
 	/*генерирует flex-контейнер уровня блока*/
 	display: -webkit-flex; 
 	display: flex; 
 	flex-direction: column;
 	/*flex-wrap: wrap;*/
-	justify-content: center;
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	/*align-content: stretch;*/
+}
+.contact_form_items{
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	/*justify-content: center;*/
 	align-items: center;
 	/*align-content: stretch;*/
+	margin-bottom: 20px;
+}
+.form_object{
+	width: 90%;
+	padding: 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*border: rgba(0, 0, 0, 0.5);*/
+	color: rgba(0, 0, 0, 1);
+}
+.form_spec_object{
+	width: 90%;
+	height: 100px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*border: rgba(0, 0, 0, 0.5);*/
+	color: rgba(0, 0, 0, 1);
 }
 .contact_button{
 	display: block;
 	box-sizing: border-box;
-	margin: 0 auto;
-	padding: 8px;
-	padding-top: 10px;
-	width: 20%;
+	/*margin: 0 auto;*/
+	padding: 10px;
+	width: 40%;
 	max-width: 150px;
 	max-height: 50px;
 	background: #fff;
@@ -740,15 +780,35 @@ body {
 }
 .contact_clients{
 	padding: 10px;
+	padding-left: 20px;
 	/*height: 140px;*/
+	width: 300px;
+	/*min-width: 280px;
+	max-width: 360px;*/
 	/*генерирует flex-контейнер уровня блока*/
 	display: -webkit-flex; 
 	display: flex; 
 	flex-direction: column;
 	/*flex-wrap: wrap;*/
-	justify-content: center;
-	align-items: center;
+	/*justify-content: center;*/
+	/*align-items: center;*/
 	/*align-content: stretch;*/
+}
+.contact_clients_pics{
+	/*padding: 10px;*/
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/*align-items: center;*/
+	align-content: space-around;
+}
+.clients_logos{
+	padding: 10px;
+	height: 5em;
+	width: 9em;
 }
 
 /* ************************************************************************ */
@@ -756,13 +816,212 @@ body {
 
 .footer{
 	background-image: url(assets/images/5b.jpg);
-	min-height: 250px;
+	/*min-height: 250px;*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-top: 20px;
+	padding-left: 20%;
+	padding-right: 20%;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	/*align-content: stretch;*/
 }
-
-
+.footer_items{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/*align-items: center;*/
+	/*align-content: stretch;*/
+}
+.footer_item{
+	width: 200px;
+	padding: 10px;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-around;*/
+	/*align-items: center;*/
+	/*align-content: stretch;*/
+}
+.f_main{
+	height: 3em;
+	padding-bottom: 2em;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-around;*/
+	align-items: center;
+	/*align-content: stretch;*/
+}
+.f_log1{
+	width: 3em;
+	height: 3em;
+}
+.f_log2{
+	padding-left:6px;
+	width: 5em;
+	height: 2em;
+}
+.footer_centertext{
+	padding-bottom: 10px;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-around;*/
+	/*align-items: center;*/
+	align-content: stretch;
+}
+.f_ct{
+	padding-left: 10px;
+}
+.f_c_log{
+	width: 1em;
+	height: 1em;
+}
+.footer_sendler{
+	margin-bottom: 2em;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-around;*/
+	/*align-items: center;*/
+	/*align-content: stretch;*/
+}
+.footer_mail{
+	/*width: 100%;*/
+	padding: 8px;
+	background-color: rgba(255,255,255,0);
+	color: #fff;
+	font-size: 1em;
+	border: 1px solid rgba(255,255,255,0.8);
+	outline: none;
+}
+.footer_mail::placeholder{
+	color: rgba(255,255,255,0.8);
+}
+.footer_newsbutton{
+	width: 20%;
+	height: 2.3em;
+	margin-left: 1em;
+	background: rgba(255, 255, 255, 0.4);
+	border: 1px solid rgba(255,255,255,0);
+	display: flex; 	
+	align-items: center;
+	justify-content: center;
+	outline: none;
+}
+.footer_newsbutton:hover{
+	background: rgba(255, 255, 255, 0.5);
+}
+.footer_newsbutton:active{
+	background: rgba(255, 255, 255, 0.7);
+}
+.footer_news_icons{
+	height: 1.3em;
+	width: 1.3em;
+}
+.footer_right_socials{
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*justify-content: space-around;*/
+	/*align-items: center;*/
+	/*align-content: stretch;*/
+}
+.footer_socials_icons{
+	height: 0.7em;
+	width: 0.7em;
+}
+.footer_right_buttons{
+	/*display: block;*/
+	/*box-sizing: border-box;
+	margin: 0 auto;*/
+	margin: 2px;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	width: 1.5em;
+	height: 1.5em;
+	max-width: 150px;
+	max-height: 50px;
+	background: #fff; /* запасной цвет для старых браузеров */
+	background: rgba(255, 255, 255, 0);
+	border: 1px solid #fff;
+	border-radius: 100%;
+	color: #fff;
+	/*font-size: 1em;
+	text-align: center;*/
+	outline: none;
+	display: flex; 	
+	align-items: center;
+	justify-content: center;
+}
+.footer_right_buttons:hover{
+	background: rgba(255, 255, 255, 0.3);
+}
+.footer_right_buttons:active{
+	background: rgba(255, 255, 255, 0.7);
+}
+.footer_buttonandcopyright{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	/*генерирует flex-контейнер уровня блока*/
+	display: -webkit-flex; 
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+.footer_leftbuttons{
+	/*display: block;*/
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 10px;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	/*width: 20%;*/
+	max-width: 150px;
+	max-height: 50px;
+	background: #fff; /* запасной цвет для старых браузеров */
+	background: rgba(255, 255, 255, 0);
+	border: 0px solid #fff;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	outline: none;
+	/*text-decoration: none;*/
+	/*letter-spacing: 1px;*/
+	/*transition: all 0.3s ease-out;*/	
+}
+.footer_leftbuttons:hover{
+	border: 0px solid #1ae3d5;
+	color: #1ae3d5;
+}
+.footer_leftbuttons:active{
+	font-weight: bold;
+}
 
 /* *********************************************************************** */
 /* other */
