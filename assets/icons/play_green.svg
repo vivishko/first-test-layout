@@ -1,0 +1,30 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37 45" fill="#1ae3d5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1ae3d5;
+        color: #1ae3d5;
+        isolation: isolate;
+      }
+    </style>
+    <filter id="WhiteFilter" x="0" y="0" width="37" height="45">
+        <feColorMatrix in="SourceGraphic" type="matrix"
+                values="0 0 0 1 0
+                        0 0 0 1 0
+                        0 0 0 1 0
+                        0 0 0 1 0
+                "/>
+    </filter> 
+    <filter id="GreenFilter" x="0" y="0" width="37" height="45">
+        <feColorMatrix in="SourceGraphic" type="matrix"
+                values="0 0     0     0   0.11   
+                        0 0.57  0     0   0.11   
+                        0 0     0.67  0   0.11   
+                        0 0     0     0.5 0.11
+                "/>
+    </filter>
+  </defs>
+  <title>play</title>
+  <image fill="#1ae3d5" width="37" height="45" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAYAAAApzaJuAAAACXBIWXMAAAsSAAALEgHS3X78AAACgUlEQVRYR82ZS8gPURjGP0IhLCxckp1roegrxcZCikJKKCG3kmJjpyhRSJSVFRuykHInt4WwsLH53BIKhUIiseHxPE0n88288z/HN+fMeOp3NjPv26858585c/5dAMaSe+QjuUrmka420XAJ5Rwjw33FqdDwHXbek3W+BinQ8AOdoymdhIBmsdDwFVl+k2vkHcrRsd1WgxTkpZS5ZBg5Dzs9ZD4CGtehKLUpd3AZeQ47x8lIVDStS1FqQ+GE/mQP7HwmG2E0rYtPyjEV1VN6g0yrqOsToVKO5eQV7Oz11Abzr1JiIDIBK0/JwoAe0aUcmtIrsHOKjAroEV3KsYK8QTlfyJaA+iRSYgg5BDs3ycyAHtGlHNORvRWs7Cf9AnpEl3KsJW9RzhOyxFefSkp0mtLTZExVbUopRze5jnK+kW1WTRNSjjXkA8rRqrc7f26TUmIEOQI7mupBaEHKoStzG+W8JBPbknKsJ4/JL/xNT9tSQr/CXqvdtqVWk4f4T67UDNhPfr1DJzctpQfqAdg5SobqvCalVsJ+9Twgc/LnNiGlqbqMcn6SHVZNSimtUPfBzlkyvqo2ldQqZA/CYl4gW+d3rI8tNYVcgJ3DyK6er0c0qU5TdYfMDugRVUpf0tZUaTdne0B9VCl9zZyDHX3NjAvoEU1K6+xdsKMbeWlAj6hSi8kz2DlIBnjqgwiVmkDOwI5u5FkVdX0iRGonsk2zYrTG3mqcX5ui1ObcwUXkEeycJKNR0bQuRSnt5A1G9VTpfpKst3Ed8lKaoovkNezo4Rj0hVsXDb7d4VuIvCnmQ0PVPvon9L7HGkOD9Y/DCSTcaPWhQf/N3Ed2Ze6SBb6i1PwBws0HQex8sNsAAAAASUVORK5CYII="/>
+  <path class="cls-1" fill="#1ae3d5"/>
+</svg>

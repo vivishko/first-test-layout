@@ -10,12 +10,14 @@
 		<div class="header">
 			<div class="text_part1">
 				<div class="navigationbar" id="header_flex-container">
-					<div class="navigation_left">
-						<img src="assets/images/log.png" alt="m_logo">
-						<img src="assets/images/tajam.png" class="ltajam" alt="m_tajam">
-						<!--<div></div>-->
+					<div class="g">
+						<div class="navigation_left">
+							<img src="assets/images/log.png" alt="m_logo">
+							<img src="assets/images/tajam.png" class="ltajam" alt="m_tajam">
+						</div>
+						<button class="nav_burger" id="nav_click"></button>
 					</div>
-					<div class="navigation_right">
+					<div class="navigation_right" id="nav_r">
 						<button class="nav_home navi_buttons zhirny">HOME</button>
 						<button class="nav_about navi_buttons zhirny">ABOUT</button>
 						<button class="nav_expertise navi_buttons zhirny">EXPERTISE</button>
@@ -77,8 +79,15 @@
 					<div class="about_video_text center">
 						<div class="about_video_icon">
 							<button class="about_video_button">
-								<object type="image/svg+xml" data="assets/icons/play.svg" id='object' class="video_play_button"></object>
+								<!-- <div class="video_play_button" />  -->
+								<!-- <object type="image/svg+xml" data="assets/icons/play1.svg" id='object' class="video_play_button"></object> -->
 								<!--<img src="assets/icons/play.svg" class="video_play_button" alt="play">-->
+								<svg id="Capa_1" enable-background="new 0 0 437.499 437.499" 
+									 viewBox="0 0 437.499 437.499" xmlns="http://www.w3.org/2000/svg" class="video_play_button">
+									<path d="m46.875 437.498c-2.67 0-5.341-.687-7.751-2.06-4.868-2.777-7.874-7.95-7.874-13.566v-406.27c0-5.616 3.006-10.789 
+										7.874-13.566 4.913-2.762 10.88-2.701 15.701.107l343.749 203.136c4.761 2.823 7.675 7.935 7.675 13.459s-2.914 10.636-7.675 13.459l-343.749 
+										203.135c-2.457 1.435-5.204 2.167-7.95 2.166zm15.625-394.521v351.521l297.409-175.76z"/>
+								</svg>
 							</button>
 						</div>
 						<div class="videotext White-Block zhirny">WATCH OUR STORY</div>
@@ -194,45 +203,41 @@
 						</button>
 				</div>
 				<div class="works_items">
-					<div class="works_items_top">
-						<div class="works_first_item">
-							<img src="assets/icons/works_icon1.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_second_item">
-							<img src="assets/icons/works_icon2.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_third_item">
-							<img src="assets/icons/works_icon3.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_forth_item">
-							<img src="assets/icons/works_icon4.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_fifth_item">
-							<img src="assets/icons/works_icon1.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_sixth_item">
-							<img src="assets/icons/works_icon3.svg" class="works_icons" alt="vjvugyu">
-						</div>
+					<div class="works_first_item">
+						<img src="assets/icons/works_icon1.svg" class="works_icons" alt="vjvugyu">
 					</div>
-					<div class="works_items_bottom">
-						<div class="works_first_items_bottom">
-							<img src="assets/icons/works_icon3.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_second_items_bottom">
-							<img src="assets/icons/works_icon1.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_third_items_bottom">
-							<img src="assets/icons/works_icon4.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_forth_items_bottom">
-							<img src="assets/icons/works_icon3.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_fifth_items_bottom">
-							<img src="assets/icons/works_icon2.svg" class="works_icons" alt="vjvugyu">
-						</div>
-						<div class="works_sixth_items_bottom">
-							<img src="assets/icons/works_icon1.svg" class="works_icons" alt="vjvugyu">
-						</div>
+					<div class="works_second_item">
+						<img src="assets/icons/works_icon2.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_third_item">
+						<img src="assets/icons/works_icon3.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_forth_item">
+						<img src="assets/icons/works_icon4.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_fifth_item">
+						<img src="assets/icons/works_icon1.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_sixth_item">
+						<img src="assets/icons/works_icon3.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_first_items_bottom">
+						<img src="assets/icons/works_icon3.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_second_items_bottom">
+						<img src="assets/icons/works_icon1.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_third_items_bottom">
+						<img src="assets/icons/works_icon4.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_forth_items_bottom">
+						<img src="assets/icons/works_icon3.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_fifth_items_bottom">
+						<img src="assets/icons/works_icon2.svg" class="works_icons" alt="vjvugyu">
+					</div>
+					<div class="works_sixth_items_bottom">
+						<img src="assets/icons/works_icon1.svg" class="works_icons" alt="vjvugyu">
 					</div>
 				</div>
 				<div class="a_works_button center">
@@ -384,5 +389,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="script.js"></script>
+
 </body>
 </html>
